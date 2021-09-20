@@ -31,6 +31,8 @@ import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer';
 import HelpIcon from '@material-ui/icons/Help';
 import PersonAddIcon from '@material-ui/icons/PersonAdd';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import StoreIcon from '@mui/icons-material/Store';
+
 
 // Utility
 import Brightness5Icon from '@material-ui/icons/Brightness5';
@@ -122,6 +124,10 @@ const Sidebar = ({children}) => {
                         <LinkRouter to="/">Accueil</LinkRouter>
                     </MenuItem>
                     <MenuItem>
+                        <ListItemIcon><StoreIcon/></ListItemIcon>
+                        <LinkRouter to="/products">Catalogue</LinkRouter>
+                    </MenuItem>
+                    <MenuItem>
                         <ListItemIcon><QuestionAnswerIcon/></ListItemIcon>
                         <LinkRouter to="/contact">Contact</LinkRouter>
                     </MenuItem>
@@ -180,7 +186,6 @@ const Sidebar = ({children}) => {
                 </List>
 
                 <Divider />
-
 
             </Drawer>
 
